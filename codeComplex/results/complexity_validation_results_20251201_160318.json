@@ -1,0 +1,63 @@
+{
+  "summary": {
+    "total": 5,
+    "correct": 3,
+    "failed": 2,
+    "accuracy": 60.0,
+    "timestamp": "2025-12-01T16:03:50.740262"
+  },
+  "detailed_records": [
+    {
+      "sample_id": 1,
+      "problem": "1179_B. Tolik and His Uncle",
+      "source": "CODEFORCES",
+      "expected_complexity": "quadratic",
+      "model_raw_output": "quadratic",
+      "model_analyzed_complexity": "quadratic",
+      "is_match": true,
+      "error": null
+    },
+    {
+      "sample_id": 2,
+      "problem": "1197_B. Pillars",
+      "source": "CODEFORCES",
+      "expected_complexity": "linear",
+      "model_raw_output": "linear",
+      "model_analyzed_complexity": "linear",
+      "is_match": true,
+      "error": null
+    },
+    {
+      "sample_id": 3,
+      "problem": "1059_C. Sequence Transformation",
+      "source": "CODEFORCES",
+      "expected_complexity": "linear",
+      "model_raw_output": "linear",
+      "model_analyzed_complexity": "linear",
+      "is_match": true,
+      "error": null
+    },
+    {
+      "sample_id": 4,
+      "problem": "1011_A. Stages",
+      "source": "CODEFORCES",
+      "expected_complexity": "linear",
+      "model_raw_output": "nlogn",
+      "model_analyzed_complexity": "logn",
+      "is_match": false,
+      "error": null
+    },
+    {
+      "sample_id": 5,
+      "problem": "1190_C. Tokitsukaze and Duel",
+      "source": "CODEFORCES",
+      "expected_complexity": "linear",
+      "model_raw_output": "nlogn",
+      "model_analyzed_complexity": "logn",
+      "is_match": false,
+      "error": null
+    }
+  ],
+  "input_file": "d:/MyResearch/codeComplex/data/data.jsonl",
+  "max_items": 5
+}
