@@ -34,7 +34,7 @@ def validate_code_complexity(src, expected_complexity, api_key=None, base_url=No
     system_prompt = """你是一位算法分析专家，精通时间复杂度分析。
     你的任务是：
     1. 分析给定代码的时间复杂度
-    2. 仅返回复杂度的标准术语，如：constant、linear、logn、nlogn、quadratic等
+    2. 仅返回复杂度的标准术语，如：constant、linear、logn、nlogn、quadratic、cubic、np。
     3. 不要输出任何解释或额外信息，只输出复杂度术语本身"""
     
     user_prompt = f"""请分析以下代码的时间复杂度，并仅返回标准的复杂度术语：
@@ -102,7 +102,7 @@ def compare_complexity(actual, expected):
         'nlogn': {'nlogn', 'n log n', 'o(n log n)', 'o(n logn)'},
         'quadratic': {'quadratic', 'o(n^2)', 'n^2'},
         'cubic': {'cubic', 'o(n^3)', 'n^3'},
-        'exponential': {'exponential', 'o(2^n)', '2^n'}
+        'np': {'np', 'o(n^p)', 'n^p'}
     }
     
     # 检查是否在等价集合中
@@ -131,7 +131,7 @@ def batch_validate_from_jsonl(jsonl_file_path, max_items=None, save_results=True
     detailed_records = []  # 存储详细记录
     
     # 确保结果目录存在
-    results_dir = "D:/MyResearch/codeComplex/results"
+    results_dir = "D:/MyResearch/codeComplex/results/LLM"
     if not os.path.exists(results_dir):
         os.makedirs(results_dir)
     
@@ -174,7 +174,6 @@ def batch_validate_from_jsonl(jsonl_file_path, max_items=None, save_results=True
                             'source': source,
                             'expected_complexity': validation_result['expected_complexity'],
                             'model_raw_output': validation_result['model_raw_output'],
-                            'model_analyzed_complexity': validation_result['model_analyzed_complexity'],
                             'is_match': validation_result['is_match'],
                             'error': validation_result['error']
                         }
@@ -291,7 +290,6 @@ if __name__ == "__main__":
             print(f"来源: {record['source']}")
             print(f"期望复杂度: {record['expected_complexity']}")
             print(f"模型原始输出: {record['model_raw_output']}")
-            print(f"模型分析复杂度: {record['model_analyzed_complexity']}")
             print(f"匹配结果: {record['is_match']}")
             if record['error']:
                 print(f"错误: {record['error']}")
