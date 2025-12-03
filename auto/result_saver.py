@@ -11,7 +11,7 @@ from datetime import datetime
 from typing import List, Dict, Any
 
 
-def save_results(results: List[Dict[str, Any]], output_dir: str = '.', 
+def save_results(results: List[Dict[str, Any]], output_dir: str = 'results', 
                  input_file: str = '', max_items: int = 0) -> str:
     """
     将分析结果保存为标准化JSON格式文件，严格参照示例结构

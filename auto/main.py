@@ -24,7 +24,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-def main(data_file: str = 'data/data.jsonl', output_dir: str = '.') -> None:
+def main(data_file: str = '../data/data.jsonl', output_dir: str = '.') -> None:
     """
     主程序入口，执行完整的分析流程
     
@@ -111,9 +111,9 @@ if __name__ == "__main__":
     import argparse
     
     parser = argparse.ArgumentParser(description='Java代码时间复杂度分析与验证系统')
-    parser.add_argument('--data', '-d', type=str, default='data/data.jsonl',
+    parser.add_argument('--data', '-d', type=str, default='../data/data.jsonl',
                         help='JSONL数据集文件路径')
-    parser.add_argument('--output', '-o', type=str, default='.',
+    parser.add_argument('--output', '-o', type=str, default='results',
                         help='输出结果目录路径')
     
     args = parser.parse_args()
