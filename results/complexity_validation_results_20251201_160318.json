@@ -12,8 +12,7 @@
       "problem": "1179_B. Tolik and His Uncle",
       "source": "CODEFORCES",
       "expected_complexity": "quadratic",
-      "model_raw_output": "quadratic",
-      "model_analyzed_complexity": "quadratic",
+      "ouput": "quadratic",
       "is_match": true,
       "error": null
     },
@@ -22,7 +21,7 @@
       "problem": "1197_B. Pillars",
       "source": "CODEFORCES",
       "expected_complexity": "linear",
-      "model_raw_output": "linear",
+      "ouput": "linear",
       "model_analyzed_complexity": "linear",
       "is_match": true,
       "error": null
@@ -32,7 +31,7 @@
       "problem": "1059_C. Sequence Transformation",
       "source": "CODEFORCES",
       "expected_complexity": "linear",
-      "model_raw_output": "linear",
+      "ouput": "linear",
       "model_analyzed_complexity": "linear",
       "is_match": true,
       "error": null
@@ -42,7 +41,7 @@
       "problem": "1011_A. Stages",
       "source": "CODEFORCES",
       "expected_complexity": "linear",
-      "model_raw_output": "nlogn",
+      "ouput": "nlogn",
       "model_analyzed_complexity": "logn",
       "is_match": false,
       "error": null
@@ -52,7 +51,7 @@
       "problem": "1190_C. Tokitsukaze and Duel",
       "source": "CODEFORCES",
       "expected_complexity": "linear",
-      "model_raw_output": "nlogn",
+      "ouput": "nlogn",
       "model_analyzed_complexity": "logn",
       "is_match": false,
       "error": null
